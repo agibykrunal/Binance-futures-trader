@@ -1,6 +1,6 @@
 """
 Binance Futures Testnet REST API client.
-
+dhhdhdhfhhfhfhhhdhshhhhahahahhahahahhaanannnsnnss
 Wraps raw HTTP interactions: signing, timestamp injection,
 request/response logging, and structured error handling.
 """
@@ -63,9 +63,8 @@ class BinanceClient:
         self._session = self._build_session()
         logger.info("BinanceClient initialised. Base URL: %s", self._base_url)
 
-    # ------------------------------------------------------------------
     # Internal helpers
-    # ------------------------------------------------------------------
+  
 
     def _build_session(self) -> requests.Session:
         """Create a requests Session with retry logic."""
@@ -177,9 +176,9 @@ class BinanceClient:
             safe["signature"] = "***"
         return safe
 
-    # ------------------------------------------------------------------
+    
     # Public API methods
-    # ------------------------------------------------------------------
+    
 
     def ping(self) -> bool:
         """Check connectivity to the API. Returns True on success."""
