@@ -1,6 +1,6 @@
 """
 Binance Futures Testnet REST API client.
-dhhdhdhfhhfhfhhhdhs
+dhhdhdhfhhfhfhhhdh
 Wraps raw HTTP interactions: signing, timestamp injection,
 request/response logging, and structured error handling.
 """
