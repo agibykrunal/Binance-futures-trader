@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""
+
 cli.py — Command-line entry point for the Binance Futures Testnet Trading Bot.
 
 Usage examples
