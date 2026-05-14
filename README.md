@@ -2,8 +2,7 @@
 
 A clean, production-quality Python CLI application for placing orders on the **Binance Futures Testnet (USDT-M)**. Built with a layered architecture (client / orders / validators / CLI), structured logging, and robust error handling.
 
----
-
+-
 ## Project Structure
 
 ```
