@@ -104,7 +104,6 @@ class BinanceClient:
                 status_code=response.status_code,
             )
 
-        # Binance error responses always contain a 'code' key (negative integer)
         if isinstance(data, dict) and "code" in data and data["code"] != 200:
             logger.error(
                 "API error | code=%s | msg=%s", data.get("code"), data.get("msg")
