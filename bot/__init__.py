@@ -1,10 +1,4 @@
-"""
-trading_bot.bot — core package.
 
-Exposes the main public surface:
-  BinanceClient, BinanceAPIError, BinanceNetworkError,
-  place_order (high-level), validators, and logging helpers.
-"""
 
 from .client import BinanceAPIError, BinanceClient, BinanceNetworkError
 from .logging_config import get_logger, setup_logging
