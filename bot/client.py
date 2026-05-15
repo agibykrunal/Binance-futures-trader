@@ -26,7 +26,7 @@ RECV_WINDOW = 5000   # milliseconds
 
 
 class BinanceAPIError(Exception):
-    """Raised when the Binance API returns an error response."""
+    
 
     def __init__(self, code: int, message: str, status_code: int = 0):
         self.code = code
@@ -36,20 +36,10 @@ class BinanceAPIError(Exception):
 
 
 class BinanceNetworkError(Exception):
-    """Raised on network-level failures (timeouts, connection errors)."""
-
+   
 
 class BinanceClient:
-    """
-    Thin wrapper around the Binance Futures Testnet REST API.
-
-    Handles:
-    - HMAC-SHA256 request signing
-    - Timestamp injection
-    - Automatic retries on transient errors
-    - Structured logging of every request and response
-    - Unified exception hierarchy
-    """
+   
 
     def __init__(self, api_key: str, api_secret: str, base_url: str = TESTNET_BASE_URL):
         if not api_key or not api_secret:
