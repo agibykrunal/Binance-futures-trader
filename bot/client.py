@@ -198,26 +198,7 @@ class BinanceClient:
         time_in_force: str = "GTC",
         reduce_only: bool = False,
     ) -> Dict[str, Any]:
-        """
-        Place a futures order on the testnet.
-
-        Args:
-            symbol:        Trading pair, e.g. 'BTCUSDT'.
-            side:          'BUY' or 'SELL'.
-            order_type:    'MARKET', 'LIMIT', or 'STOP_MARKET'.
-            quantity:      Order quantity in base asset.
-            price:         Limit price (required for LIMIT orders).
-            stop_price:    Stop trigger price (required for STOP_MARKET orders).
-            time_in_force: 'GTC' | 'IOC' | 'FOK' (ignored for MARKET).
-            reduce_only:   Whether this is a reduce-only order.
-
-        Returns:
-            Raw API response dictionary.
-
-        Raises:
-            BinanceAPIError: On API-level failures.
-            BinanceNetworkError: On network failures.
-        """
+       
         params: Dict[str, Any] = {
             "symbol": symbol,
             "side": side,
