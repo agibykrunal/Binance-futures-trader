@@ -52,8 +52,7 @@ class BinanceClient:
         self._session = self._build_session()
         logger.info("BinanceClient initialised. Base URL: %s", self._base_url)
 
-    # Internal helpers
-  
+   
 
     def _build_session(self) -> requests.Session:
         """Create a requests Session with retry logic."""
