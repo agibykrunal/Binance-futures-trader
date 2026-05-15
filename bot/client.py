@@ -164,7 +164,7 @@ class BinanceClient:
         return safe
 
     
-    # Public API methods
+ 
     
 
     def ping(self) -> bool:
