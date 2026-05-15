@@ -1,8 +1,3 @@
-"""
-Binance Futures Testnet REST API client.
-Wraps raw HTTP interactions: signing, timestamp injection,
-request/response logging, and structured error handling.
-"""
 
 from __future__ import annotations
 
